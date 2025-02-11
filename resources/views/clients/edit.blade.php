@@ -14,7 +14,7 @@
                     @method('PUT')
 
                     <div class="mb-3">
-                        <label for="code" class="form-label">رمز العميل</label>
+                        <label for="code" class="form-label">كود العميل</label>
                         <input type="text" class="form-control @error('code') is-invalid @enderror" id="code" name="code" value="{{ old('code', $client->code) }}" required>
                         @error('code')
                             <div class="invalid-feedback">{{ $message }}</div>
